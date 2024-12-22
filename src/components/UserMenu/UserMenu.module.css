@@ -1,0 +1,11 @@
+.wrap {
+    display: flex;
+    gap: 36px;
+  }
+  
+  .btn {
+    background-color: rgb(105, 87, 109);
+    width: 54px;
+    height: 30px;
+    padding: 4px;
+  }

@@ -18,16 +18,16 @@ const ContactsPage = () => {
     const isError = useSelector(selectIsError);
   
     return (
-      <div>
-        <h1>Phonebook</h1>
-        
-        <ContactForm />
-        <SearchBox />
-        {isLoading && <h2>Loading...</h2>}
-        {isError && <h2>Error...</h2>}
-  
-        <ContactList />
-      </div>
+        <div>
+            <h1>Phonebook</h1>
+            
+            <ContactForm />
+            <SearchBox />
+            {isLoading && <h2>Loading...</h2>}
+            {isError && <h2>Error...</h2>}
+      
+            <ContactList />
+        </div>
     );
   
   }

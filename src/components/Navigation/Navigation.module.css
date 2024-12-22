@@ -1,0 +1,12 @@
+.wrap {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .link {
+    color: white;
+    font-weight: bold;
+  }
+  .activeLink {
+    color: black;
+  }

@@ -5,15 +5,15 @@ import s from './UserMenu.module.css'
 
 const UserMenu = () => {
 
-    const user = useSelector(selectUser);
-        const dispatch = useDispatch();
-    
-      return (
-        <div className={s.wrap}>
-          <div>Welcome, {user.name}</div>
-          <button onClick={() => dispatch(logout())} className='btn btn-secondary'>Exit</button>
-        </div>
-      )
+        const user = useSelector(selectUser);
+            const dispatch = useDispatch();
+        
+          return (
+              <div className={s.wrap}>
+                  <div>Welcome, {user.name}</div>
+                  <button onClick={() => dispatch(logout())} className='btn btn-secondary'>Exit</button>
+              </div>
+          )
     }
     
     export default UserMenu

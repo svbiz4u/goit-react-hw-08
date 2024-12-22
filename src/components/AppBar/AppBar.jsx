@@ -10,8 +10,8 @@ export const AppBar = () => {
     const isLoggedIn = useSelector(selectIsLoggedIn)
       return (     
           <div className={s.wrapperLinks}>
-           <Navigation />
-           {isLoggedIn ? <UserMenu /> : <AuthNav />}
+            <Navigation />
+            {isLoggedIn ? <UserMenu /> : <AuthNav />}
                   
           </div>
       );

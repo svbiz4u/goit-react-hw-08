@@ -9,11 +9,11 @@ import { Toaster } from 'react-hot-toast'
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-    <PersistGate loading={null} persistor={persistor}>
-    <BrowserRouter>
-      <App />
-      <Toaster />
-    </BrowserRouter>
-    </PersistGate>
+      <PersistGate loading={null} persistor={persistor}>
+        <BrowserRouter>
+            <App />
+            <Toaster />
+        </BrowserRouter>
+      </PersistGate>
   </Provider>
 )

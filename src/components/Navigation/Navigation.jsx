@@ -13,7 +13,7 @@ const Navigation = () => {
   
     return (
       <div className={s.wrap}>
-        <NavLink className={buildLinkClass} to='/'>
+          <NavLink className={buildLinkClass} to='/'>
             Home
           </NavLink>
           {isLoggedIn && <NavLink className={buildLinkClass} to='/contacts'>

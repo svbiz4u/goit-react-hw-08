@@ -49,15 +49,15 @@ export const goitApi = axios.create({
   });
   
   export const refresh = createAsyncThunk("refresh", async (_, thunkApi) => {
-    const savedToken = thunkApi.getState().auth.token;
-    if (!savedToken) {
-      return thunkApi.rejectWithValue("Token does not exist!");
-    }
-    setAuthHeader(savedToken);
-    try {
-      const { data } = await goitApi.get("/users/current");
-      return data;
-    } catch (error) {
-      return thunkApi.rejectWithValue(error.message);
-    }
+      const savedToken = thunkApi.getState().auth.token;
+      if (!savedToken) {
+        return thunkApi.rejectWithValue("Token does not exist!");
+      }
+      setAuthHeader(savedToken);
+      try {
+        const { data } = await goitApi.get("/users/current");
+        return data;
+      } catch (error) {
+        return thunkApi.rejectWithValue(error.message);
+      }
   });
