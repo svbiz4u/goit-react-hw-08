@@ -11,7 +11,7 @@ const SearchBox = () => {
 
     return (
         <div>
-          <p>Find contacts by name or phonenumber</p>
+          <p>Find contacts by name or phone number</p>
           <input className={s.input} type="text" placeholder='Search...' value={searchTerm}
           onChange={handleInputChange} />
               
