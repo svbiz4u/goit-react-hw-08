@@ -11,7 +11,7 @@ const UserMenu = () => {
           return (
               <div className={s.wrap}>
                   <div>Welcome, {user.name}</div>
-                  <button onClick={() => dispatch(logout())} className='btn btn-secondary'>Exit</button>
+                  <button onClick={() => dispatch(logout())} className='btn btn-secondary'>Log Out</button>
               </div>
           )
     }

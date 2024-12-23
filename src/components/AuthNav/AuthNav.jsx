@@ -12,9 +12,11 @@ const AuthNav = () => {
       return (
         <div className={s.wrap}>
           <NavLink className={buildLinkClass} to='/login'>
+
               Login
           </NavLink>
           <NavLink className={buildLinkClass} to='/register'>
+
               Register
           </NavLink>
         </div>
